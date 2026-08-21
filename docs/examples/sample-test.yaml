@@ -1,0 +1,13 @@
+name: Login Test
+
+steps:
+  - action: connect
+
+  - action: send_command
+    command: login
+
+  - action: wait
+    seconds: 2
+
+  - action: check_status
+    expected: success

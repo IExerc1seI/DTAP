@@ -1,13 +1,17 @@
 name: Login Test
 
-steps:
-  - action: connect
+description: Simple login scenario
 
-  - action: send_command
-    command: login
+steps:
+  - action: log
+    message: Starting test
 
   - action: wait
     seconds: 2
 
-  - action: check_status
-    expected: success
+  - action: compare
+    left: admin
+    right: admin
+
+  - action: log
+    message: Finished

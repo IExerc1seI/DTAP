@@ -1,0 +1,13 @@
+name: Stress Test
+
+description: Simulate system load
+
+steps:
+  - action: log
+    message: Stress test started
+
+  - action: wait
+    seconds: 5
+
+  - action: log
+    message: Stress test finished

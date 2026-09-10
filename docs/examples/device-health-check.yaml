@@ -1,0 +1,13 @@
+name: Device Health Check
+
+description: Validate device state
+
+steps:
+  - action: log
+    message: Health check started
+
+  - action: wait
+    seconds: 3
+
+  - action: log
+    message: Health check finished

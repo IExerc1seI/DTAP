@@ -1,5 +1,5 @@
 from src.commands.base_command import BaseCommand
-
+from src.infrastructure.logging import logger
 
 class LogCommand(BaseCommand):
 
@@ -7,4 +7,5 @@ class LogCommand(BaseCommand):
         self.message = message
 
     async def execute(self) -> None:
-        print(self.message)
+        logger.info(self.message)
+    

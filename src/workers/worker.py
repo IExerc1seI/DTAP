@@ -1,6 +1,6 @@
 from src.domain.entities.test import Test
 from src.workers.executor import TestExecutor
-from src.infrastructure.logging import logger
+from src.infrastructure.logging.logger import logger
 
 class Worker:
     def __init__(self):

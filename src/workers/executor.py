@@ -1,6 +1,6 @@
 from src.application.factories.command_factory import CommandFactory
 from src.domain.entities.test import Test
-from src.infrastructure.logging import logger
+from src.infrastructure.logging.logger import logger
 
 class TestExecutor:
 

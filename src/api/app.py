@@ -1,7 +1,7 @@
 import uvicorn
 import fastapi
 from pathlib import Path
-from src.api.schemas.reques import RequestSchema
+from src.api.schemas.request import RequestSchema
 from src.api.schemas.response import RunResponse
 
 from src.application.parsers.yaml_parser import YamlParser

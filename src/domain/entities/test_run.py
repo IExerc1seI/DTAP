@@ -5,11 +5,12 @@ from src.domain.enums.run_status import RunStatus
 
 @dataclass
 class TestRun:
+    status: RunStatus
+
     id: UUID = field(default_factory=uuid4)
     test_id: UUID = field(default_factory=uuid4)
-    status: RunStatus
-    started_at: datetime = field(default=datetime.utcnow)
-    finished_at: datetime = field(default=datetime.utcnow)
+    started_at: datetime = field(default_factory=datetime.utcnow)
+    finished_at: datetime = field(default_factory=datetime.utcnow)
 
     def start(self):
         self.status = RunStatus.RUNNING

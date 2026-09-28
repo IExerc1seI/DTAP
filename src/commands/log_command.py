@@ -1,5 +1,5 @@
 from src.commands.base_command import BaseCommand
-from src.infrastructure.logging import logger
+from src.infrastructure.logging.logger import logger
 
 class LogCommand(BaseCommand):
 

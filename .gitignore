@@ -1,8 +1,16 @@
 __pycache__/
 *.pyc
+
+.pytest_cache/
+
 .venv/
+venv/
+
 .vscode/
+
+logs/
+*.log
 
 test_results.db
 
-logs/
+.DS_Store
